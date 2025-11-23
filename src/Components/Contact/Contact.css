@@ -1,0 +1,117 @@
+.cont11 {
+    background-color: #F3F3F3;
+    margin-top: 4vh;
+    margin-left: 4vw;
+    width: 92%;
+    border: 1px solid #F3F3F3;
+    border-radius: 60px;
+    display: flex;
+    min-height: 85vh;
+    max-height: 90vh;
+    margin-bottom: 10vh;
+}
+
+.inp {
+    margin-left: 6.5vw;
+    margin-top: 8vh;
+    width: 69%;
+    
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    gap: 4vw;
+    margin-bottom: 4.5vh;
+}
+
+.cont11 input {
+    margin-right: 1vh;
+    font-size: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.i2 input {
+    height: 6vh;
+    text-indent: 0.8rem;
+    width: 30vw;
+    margin-bottom: 3.5vh;
+}
+
+.space {
+    margin-bottom: 1.5vh;
+}
+
+.photo img{
+    height: 90%;
+    margin-top: 40px;
+    position: relative;
+    left: 10rem;
+}
+
+textarea {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 30vw;
+}
+
+::placeholder {
+    font-size: 15px;
+    
+    text-align: left;
+    text-indent: 1rem 0.9rem;
+}
+
+.inp button {
+    background-color: black;
+    color: white;
+    margin-top: 4vh;
+    height: 5vh;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 30vw;
+    font-weight: 600;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    margin-bottom: 2vh;
+}
+@media only screen and (orientation:portrait){
+    .photo{
+        opacity: 0;
+        height: 0;
+        width: 0;
+        position: relative;
+        z-index: -20;
+    }
+    .photo img{
+        opacity: 0;
+        height: 0;
+        width: 0;
+        position: relative;
+        z-index: -20;
+    }
+    .cont11{
+        width: 92vw;
+        margin-left: 3vw;
+        margin-right: 0;
+        min-width: 75vh;
+        flex-direction: column;
+    }
+    .i2 input{
+        width: 75vw;
+    }
+    
+    .inp{
+        width: 80vw;
+    }
+    textarea {
+        width: 75vw;
+    }
+    .inp button{
+        margin-left: 25vw;
+    }
+}

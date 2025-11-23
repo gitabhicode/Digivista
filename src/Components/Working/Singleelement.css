@@ -1,0 +1,179 @@
+.increase{
+    /* height: 20vh; */
+    animation: Iheight 1s ease-in-out 0s forwards;
+}
+.decrease{
+    animation: Dheight 1s ease-in-out 0s forwards;
+    
+}
+.see{
+    
+    animation: see 2500ms ease-in-out 0s forwards;
+}
+.notsee{
+    animation: notsee 500ms ease-in-out 0s forwards;
+
+}
+.border2 {
+    margin-left: 3%;
+    width: 92%;
+    border: 2px solid black;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+}
+.working-para{
+    margin-left: 1.5rem;
+    width: 82vw;
+    font-size: 1.2rem;
+    margin-bottom: 1vh;
+}
+.working-button:hover{
+    cursor: pointer;
+}
+.working-button{
+    padding: 0.5rem 0.5rem 0.1rem 0.5rem;
+    font-size: x-large;
+    border: 1px  solid black;
+    border-radius: 50%;
+    color: black;
+}
+.working-sno{
+    font-size: 3.3rem;
+    margin-right: 1rem;
+    margin-top: 1%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+.initial-working{
+    align-content: center; 
+    margin-top: 0.1rem;
+    
+    margin-left: 1.5rem;
+    
+}
+#working-heading{
+    font-size: 2.2rem;
+    width: 75vw;
+    display: inline-block;
+   
+}
+@keyframes Iheight{
+    from{
+        height: 13vh;
+        align-content: center;
+    }
+    to{
+        /* align-content: center; */
+        height: 40vh;
+        background-color: #B9FF66;
+    }
+}
+@keyframes phoneIheight{
+    from{
+        height: 13vh;
+        align-content: center;
+    }
+    to{
+        /* align-content: center; */
+        height: 60vh;
+        background-color: #B9FF66;
+    }
+}
+@keyframes Dheight{
+    from{
+        /* align-content: center; */
+        height: 40vh;
+        background-color: #B9FF66;
+        
+    }
+    to{
+        align-content: center;
+        height: 12vh;
+        background-color: #F3F3F3;
+    }
+}
+@keyframes phoneDheight{
+    from{
+        /* align-content: center; */
+        height: 60vh;
+        background-color: #B9FF66;
+        
+    }
+    to{
+        /* align-content: center; */
+        height: 12vh;
+        background-color: #F3F3F3;
+    }
+}
+@keyframes see{
+    from{
+        opacity: -2;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes notsee{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+/* @media only screen and(min-height:750px){
+    .working-para{
+        font-size: 1.1rem;
+    }
+}
+@media only screen and(min-height:850px){
+    .working-para{
+        font-size: 1.4rem;
+    }
+}
+@media only screen and(min-height:900px){
+    .working-para{
+        font-size: 1.8rem;
+    }
+} */
+
+@media only screen and (orientation:portrait){
+    #working-heading{
+        font-size: 1.3rem;
+        margin-top: 1vh;
+        font-weight: 500;
+    } 
+    .working-sno{
+        font-size: 2rem;
+        position: relative;
+        top: -5px;
+    }
+    .initial-working{
+        display: flex;
+        justify-content: center;
+        margin-top: 4vh;
+    }
+    .working-button{
+        padding: 0.3rem 0.3rem 0.1rem 0.3rem;
+    }
+    .working-para{
+        font-size: 1rem;
+        width: 80vw;
+    }
+    .increase{
+        animation: phoneIheight 1s ease-in-out 0s forwards;
+    }
+    .decrease{
+        animation: phoneDheight 1s ease-in-out 0s forwards;
+
+    }
+}
+@media only screen and (orientation:landscape){
+    #working-heading{
+        position: relative;
+        top: 0px;
+    }
+    .working-sno{
+        position: relative;
+        top: 5px;
+    }
+}

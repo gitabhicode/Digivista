@@ -1,0 +1,99 @@
+/* HEADER */
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 10000;
+    box-sizing: border-box; /* ⭐ prevents overflow */
+}
+
+
+/* LEFT LOGO */
+.left {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* MENU (DESKTOP) */
+.right {
+    display: flex;
+    gap: 1rem;
+}
+
+.items {
+    padding: 0.8rem 1rem;
+    font-size: 1.1rem;
+}
+
+.bo {
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+/* HAMBURGER (Hidden on Desktop) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 28px;
+    height: 3px;
+    background: black;
+}
+
+/* ----------------------- */
+/* MOBILE VIEW */
+/* ----------------------- */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: flex;   /* SHOW HAMBURGER */
+        z-index: 20000;
+    }
+
+    .right {
+        display: none;        /* HIDE MENU BY DEFAULT */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: white;
+        padding: 1rem 0;
+        text-align: center;
+        border-top: 1px solid #ddd;
+    }
+
+    .right.show {
+        display: flex;  /* SHOW WHEN HAMBURGER CLICKED */
+    }
+
+    .items {
+        width: 100%;
+        padding: 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    .bo {
+        width: 90%;
+        margin: auto;
+    }
+
+        .nav-header {
+        padding: 0.8rem 1rem;  
+    }
+}
+
+/* @media (max-width: 768px) {
+    .nav-header {
+        padding: 0.8rem 1rem;  
+    }
+} */

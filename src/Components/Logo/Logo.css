@@ -1,0 +1,17 @@
+.cont3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 50px;
+    padding-top: 5vh;
+    padding-bottom: 1vh;
+}
+@media only screen and (orientation:portrait){
+    .cont3{
+        height: 50vh;
+    }
+    .cont3 img{
+        margin: 0.8rem 0.2rem;
+        height: 50px;
+    }
+}

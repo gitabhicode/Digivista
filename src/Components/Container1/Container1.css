@@ -1,0 +1,117 @@
+.cont2 {
+    display: flex;
+    margin-left: 4vw;
+    margin-bottom: 5vh;
+    margin-top: 6%;
+}
+
+
+.l {
+    width: 40vw;
+    /* animation: image 1.2s ease-in-out 0s forwards; */
+    height: 80vh;
+    
+    align-content: center;
+}
+
+.text {
+    font-size: 3.8rem;
+    font-weight: 400;
+    margin-bottom: 2.3vh;
+}
+
+.p {
+    font-size: 1.45rem;
+    font-weight: 300;
+    margin-bottom: 2.4rem;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1.3rem;
+    border: 1px solid black;
+    border-radius: 18px;
+}
+
+.cont2 img {
+    /* height: 80vh; */
+    max-height: 80vh;
+    width: 50vw;
+    object-fit: contain;
+    margin-left: 10vw;
+    min-height: 40vh;
+}
+@keyframes Landscape_image{
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes portrait_image{
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media only screen and (orientation:landscape){
+    .cont2 img{
+        animation: Landscape_image 1.2s ease-in-out 0s forwards;
+    }
+    .l{
+        animation: Landscape_image 1.2s ease-in-out 0s forwards;
+    }
+}
+@media only screen and (orientation:portrait){
+    .cont2{
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        margin-left: 0;
+        height: 92vh;
+        min-height: 70vh;
+        max-height: 75vh;
+        padding-top:4rem ;
+        /* margin-bottom: 2rem; */
+    }
+    .text{
+        text-align: center;
+        font-size: 2.2rem;
+        justify-content: center;
+    }
+    .l{
+        width: 90vw;
+        margin: 1vh 5vw;
+        align-content: flex-start;
+    }
+    .p{
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    .button{
+        padding: 1rem;
+        font-size: 1rem;
+        
+    }
+    .cont2 img{
+        animation: portrait_image 1.2s ease-in-out 0s forwards;
+        transform: scale(1.8);
+        margin-left: 22vw;
+    }
+    
+}
+@media only screen and (max-height:741px){
+    .cont2 img{
+        transform: scale(1.2);
+        padding-top: 1rem;
+    }
+}
