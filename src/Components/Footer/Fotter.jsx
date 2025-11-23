@@ -18,9 +18,9 @@ const Fotter = () => {
                 <div class="last">
                     <div class="i">
                         <div id='k' class="but y f">Contact Us:</div>
-                        <div class="text5">Email:info@digivista.com</div>
-                        <div class="text5">Phone:9660384413</div>
-                        <div class="text5">Address:Sahaj Farms, Manayta Tech park, Bengaluru, India</div>
+                        <div class="text5">Email: yadavabhishek29200@gmai.com</div>
+                        <div class="text5">Phone:6264353690</div>
+                        <div class="text5">Address:MANIT, Bhopal India</div>
 
                     </div>
                     <div class="email">

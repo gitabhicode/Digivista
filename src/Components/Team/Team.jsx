@@ -36,11 +36,11 @@ const Team = () => {
             <div class="cont14">
                 <div class="flex2">
                     <img src={team3} alt=""/>
-                    <div class="t2">Saumya Khushlani<div class="t3">Software Developer</div>
+                    <div class="t2">Abhishek Yadav<div class="t3">Software Developer</div>
                     </div>
                 </div>
                 <div class="border2"></div>
-                <div class="text5">1+ years of experience in Software Devlpoement and content creation.</div>
+                <div class="text5"> Software Devlpoement</div>
             </div>
         </div>
         </div>
